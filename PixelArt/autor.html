@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <title>Pixel Art</title>
+
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/common-pixel');
+
+        ul {
+            position: relative;
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            color: white;
+            border: 2px solid white;
+        }
+
+        li {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transform-origin: bottom right;
+        }
+
+        ul li a {
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+        }
+
+        ul li:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        ul li:nth-child(2) {
+            transform: rotate(90deg);
+        }
+
+        ul li:nth-child(3) {
+            transform: rotate(180deg);
+        }
+
+        ul li:nth-child(4) {
+            transform: rotate(270deg);
+        }
+
+        ul li:nth-child(even) {
+            background-color: rgb(43, 43, 43);
+        }
+
+        #menu {
+            justify-content: center;
+            display: flex;
+        }
+
+        h1 {
+            font-family: 'Common Pixel', sans-serif;
+            font-size: 400%;
+            margin: 0;
+            padding-left: 2%;
+            padding-top: 1%;
+        }
+
+        h2 {
+            font-family: 'Common Pixel', sans-serif;
+            color: white;
+            font-size: 200%;
+            padding-left: 2%;
+            margin-bottom: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            border-bottom: 2px solid white;
+            border-top: 2px solid white;
+            margin: 0;
+            padding: 0;
+            background-image: url(imagenes/fondo.png);
+            color: white;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+
+        #logo {
+            z-index: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-right: 1%;
+            padding-top: 1%;
+        }
+
+        body {
+            background-image: url(imagenes/fondo2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            padding: 3%;
+            padding-bottom: 0%;
+            margin-top: 0;
+            font-size: 100%;
+            width: 80%;
+            text-align: justify;
+
+        }
+
+        #contenedor {
+            justify-content: center;
+            display: flex;
+            background-image: url(imagenes/gif.gif);
+        }
+
+        .foto {
+            border: 2px solid white;
+            height: min-content;
+            margin: 5%;
+        }
+
+        #contacto {
+            transform: rotate(100deg);
+            padding-top: 10px;
+            padding-left: 11px;
+        }
+
+        #home {
+            transform: rotate(90deg);
+            padding-left: 20px;
+        }
+
+        #galeria {
+            transform: rotate(170deg);
+            padding-left: 15px;
+        }
+
+        #bloque1 {
+            margin: 2%;
+        }
+
+        #autorr {
+            border: 2px solid white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Pixel Art</h1>
+        <img id="logo" src="imagenes/logo (2).png" width="7%">
+    </header>
+    <div id="contenedor">
+        <div id="bloque1">
+            <img id="autorr" src="imagenes/autorr.jpg">
+        </div>
+        <div id="bloque2">
+            <p>Richard Shoup (30 de julio de 1943 - 18 de julio de 2015) fue un científico informático y empresario
+                estadounidense , conocido principalmente por su trabajo pionero en gráficos y animación por computadora.
+                Originario de Gibsonia, Pensilvania, residió por última vez en San José, California.
+                Obtuvo un BSEE y un Ph.D. en informática de la Universidad Carnegie Mellon. Su doctorado La tesis fue
+                la primera en explorar la lógica programable y el hardware reconfigurable, ahora ampliamente utilizado
+                en computadoras y electrónica de consumo.
+                En 1973, mientras trabajaba como uno de los primeros empleados en el Centro de Investigación de Xerox
+                Palo Alto, creó SuperPaint , uno de los primeros programas de edición de imágenes. El futuro
+                cofundador de Pixar, Alvy Ray Smith, contribuyó al desarrollo del programa como contratista
+                independiente.
+            </p>
+            <p>
+                Aunque había sido contratado directamente por Robert Taylor tras el colapso de Berkeley Computer
+                Corporation, los intereses de Shoup en los gráficos de video y las imágenes en color basadas en píxeles
+                chocaron con la oficina del futuro programa de investigación cultivado por Taylor y Butler Lampson, lo
+                que finalmente precipitó su partida. de Xerox. En 1979, cofundó Aurora Systems, una empresa que fue una
+                de las primeras productoras de hardware y software de animación digital. Recibió un Premio Emmy especial
+                (compartido con Xerox) en 1983 y un Premio de Ingeniería Científica de la Academia (compartido con Smith
+                y Thomas Porter ) en 1998 por su trabajo en SuperPaint.
+                Desde 2000 hasta su muerte, fue asociado del Boundary Institute for the Study of Foundations, una
+                organización sin fines de lucro involucrada en la investigación de las ciencias físicas y la
+                parapsicología.
+                Un músico ávido en su tiempo libre, Shoup tocó el trombón de jazz durante muchos años en varias grandes
+                bandas en todo el Área de la Bahía de San Francisco.
+                Shoup murió de cáncer de pulmón el 18 de julio de 2015.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div id="menu">
+            <ul>
+                <li><a href="autor.html"><img src="imagenes/autor.png" width="30px"></a></li>
+                <li><a href="contacto.html"><img src="imagenes/contacto.png" width="30px" id="contacto"></a></li>
+                <li><a href="galeria.html"><img src="imagenes/galeria.png" width="30px" id="galeria"></a></li>
+                <li><a href="inicio.html"><img src="imagenes/home.png" width="30px" id="home"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+
+</html>
